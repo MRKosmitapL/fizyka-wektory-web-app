@@ -131,8 +131,12 @@ dash_app.clientside_callback(
             czastki.push(calculate_points(A, B, points_limit, step));
         }
 
-        const max_x = Math.max(...czastki.flat().map(point => Math.abs(point[1])));
-        const max_y = Math.max(...czastki.flat().map(point => Math.abs(point[2])));
+        const all_x_values = czastki.flat().map(point => point[1]);
+        const all_y_values = czastki.flat().map(point => point[2]);
+        const max_x = Math.max(...all_x_values);
+        const min_x = Math.min(...all_x_values);
+        const max_y = Math.max(...all_y_values);
+        const min_y = Math.min(...all_y_values);
 
         const ctx = window.dash_clientside.callback_context;
         const button_id = ctx.triggered.length ? ctx.triggered[0].prop_id.split('.')[0] : 'No clicks yet';
@@ -140,8 +144,8 @@ dash_app.clientside_callback(
         const fig = {
             data: [],
             layout: {
-                xaxis: {range: [0, max_x], title: 'x[m]'},
-                yaxis: {range: [-max_y, max_y], title: 'y[m]'}
+                xaxis: {range: [min_x, max_x], title: 'x[m]'},
+                yaxis: {range: [min_y, max_y], title: 'y[m]'}
             }
         };
 
