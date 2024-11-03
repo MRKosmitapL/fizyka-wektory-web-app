@@ -2,8 +2,8 @@ Made for physics classes using plotly and dash.
 
 # How to run locally:
 1. Clone project.
-2. Install requirements.txt: ```pip install requirements.txt ```.
-3. Open terminal and go to ```./web_app``` folder.
+2. Open terminal and go to ```./web_app``` folder.
+3. Install requirements.txt: ```pip install requirements.txt ```.
 4. Run project using ```py fizyka_web.py ```.
 
 # How to use:
