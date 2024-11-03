@@ -11,7 +11,7 @@ Made for physics classes using plotly and dash.
 2. Set last ```t``` value to calculate (x and y axis boundaries will also be calculated based on that).
 3. Set frequency of calculated points.
 4. Set duration of each frame.
-5. Set values of each vector equation, where A is x axis, B is y axis. **Only allowed variable is "t". Use python syntax for equations.**
+5. Set values of each vector equation, where A is x axis, B is y axis. **Only allowed variable is "t". Use js syntax for equations.**
     + Example:
     + A: ```t```
     + B: ```5 * t - (1/2) * 9.81 * t**2```
