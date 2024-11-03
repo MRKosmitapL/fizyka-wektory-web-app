@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "fizyka_web.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "fizyka_web.py"
+        }
+    ]
+}
