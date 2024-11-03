@@ -30,9 +30,9 @@ dash_app.layout = dbc.Container([
                     dbc.Form([html.Div(id='czastki-inputs')]),
                     dbc.Row([
                         dbc.Col([
-                            dbc.Button('Start', id='start-button', color='primary', n_clicks=0, className='mt-3'),
+                            dbc.Button('Start', id='start-button', color='success', n_clicks=0, className='mt-3'),
                             dbc.Button('Stop', id='stop-button', color='danger', n_clicks=0, className='mt-3', style={'margin-left': '10px'}),
-                            dbc.Button('Pokaż wszystkie punkty', id='show-all-button', color='success', n_clicks=0, className='mt-3', style={'margin-left': '10px'}),
+                            dbc.Button('Pokaż wszystkie punkty', id='show-all-button', color='primary', n_clicks=0, className='mt-3', style={'margin-left': '10px'}),
                         ], width={"size": 12}, style={"text-align": "center"})
                     ]),
                 ])
