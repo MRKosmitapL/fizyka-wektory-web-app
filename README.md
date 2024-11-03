@@ -8,7 +8,7 @@ Made for physics classes using plotly and dash.
 
 # How to use:
 1. Set how many vector equations You want to show.
-2. Set last ```t``` value to calculate (x and y axis boundaries will also be calculated based on that. **Note that in animation, x axis will always start at 0**).
+2. Set last ```t``` value to calculate (x and y axis boundaries will also be calculated based on that).
 3. Set frequency of calculated points.
 4. Set duration of each frame.
 5. Set values of each vector equation, where A is x axis, B is y axis. **Only allowed variable is "t". Use python syntax for equations.**
