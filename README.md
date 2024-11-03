@@ -15,3 +15,4 @@ Made for physics classes using plotly and dash.
     + Example:
     + A: ```t```
     + B: ```5 * t - (1/2) * 9.81 * t**2```
+# Live preview can be seen at: https://fizykawebapp.vercel.app/
